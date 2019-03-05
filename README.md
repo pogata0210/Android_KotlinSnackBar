@@ -3,9 +3,6 @@
 ## Overview
 Build a Simple Snack Bar program in Intellij using Kotlin
 
-## Requirements
-This app will consist of a map acitvity with your own buttons that will center the map on the user's current location and place a map marker on the centered location.
-
 ## Instructions
 
 ### Classes
