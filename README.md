@@ -46,6 +46,23 @@ Add a property called "isBroke". Write a getter which will check if the customer
 7. Bob buys 3 of Pretzel. Print Bob Cash on hand. Print quantity of Pretzel.  
 
 ## Go Further
+You are free to pick either of these options or create your own. Just be sure to **commit** once you complete the first part of the assignment.
+### Command Line App
+- Build a full command line app with menus to interact with your snackbar as a customer or as a manager  
+> You can read content from the command line just like you would in a java app. Here is a sample method.  
+```Kotlin
+import java.util.Scanner
+
+fun main(vararg args: String) {
+  val input = Scanner(System.`in`)
+  val a = input.nextInt()
+  val b = input.nextInt()
+  println(a + b)
+}
+```
+
+### Kotlin Server
 - Write the Base CrudySnacks JX app in Kotlin  
 > TIP: The annotations work the same as they do in Java.  
 > For your repositories, you can inheritf from JPA repository with this line: `interface VendingMachineRepository: JpaRepository<VendingMachine, Long>`  
+
