@@ -7,13 +7,13 @@ Build a Simple Snack Bar program in Intellij using Kotlin
 
 ### Classes
 Snack has id, name, quantity, cost, vending machine id
-Snack can set name, get quantity, add quantity given quantity, buy snack given quantity, get total cost given a quantity.
+Snack can set and get name, get quantity (private setter), add quantity given quantity (method), buy snack given quantity  (method, returns cost), get total cost given a quantity (property, calculated on get).
 
-Vending machine has id, name
-Vending Machine set and return name and return the 
+Vending machine has id, name  
+Vending Machine set and return name and return the id  
 
-Customer has id, name, cash on hand
-Customer can add cash, buy given total cash used in purchase, get and set name, get cash on hand.  
+Customer has id, name, cash on hand  
+Customer can add cash, buy given total cash used in purchase (method, adjusts cash on hand), get and set name, get cash on hand.  
 Add a property called "isBroke". Write a getter which will check if the customer has any money and return false if so.
 
 ### Instances
