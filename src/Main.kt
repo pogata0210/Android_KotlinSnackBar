@@ -1,4 +1,9 @@
 fun main (args: Array<String>){
+    
+    class Customer (val id: Int, var name: String , val cashLeft: Double)
+    class VendingMachine (val id: Int, var name: String)
+    class Snack (val id: Int, var name: String, private var quantity: Int, var cost: Int, var vendingMachineNum: Int)
+
 
     /**
      * Jane buys 3 of Soda. Print Jane Cash on hand. Print quantity of Soda.
@@ -14,8 +19,8 @@ fun main (args: Array<String>){
     val bob = Customer(2, "Bob", 33.14)
 
     val food = VendingMachine(1, "food")
-    val drink = vendingMachine(2, "drink")
-    val office = vendingMachine(3, "office")
+    val drink = VendingMachine(2, "drink")
+    val office = VendingMachine(3, "office")
 
     val chips = Snack(1, "Chips", 36, 1.75, 1)
     val chocolate = Snack(2, "Chocolate Bar", 36, 1.00, 1)
@@ -25,9 +30,6 @@ fun main (args: Array<String>){
     val water = Snack(2, "Water", 20, 2.75, 2)
 
 
-    class Customer (val id: Int, var name: String , val cashLeft: Double)
-    class VengingMachine (val id: Int, var name: String)
-    class Snack (val id: Int, var name: String, private var quantity: Int, var cost: Int, var vendingMachineNum: Int)
 
 
 }
