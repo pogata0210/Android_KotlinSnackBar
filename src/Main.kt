@@ -1,4 +1,6 @@
 fun main (args: Array<String>){
+    println("Jane's Cash On Hand is ${buyItem(7.50, 45.25)}")
+
     /**
      * Jane buys 3 of Soda. Print Jane Cash on hand. Print quantity of Soda.
     Jane buys 1 of Pretzel. Print Jane Cash on hand. Print quantity of Pretzel.
@@ -22,8 +24,16 @@ fun main (args: Array<String>){
 
     val soda = Snack(1, "Soda", 24, 2.50, 2)
     val water = Snack(2, "Water", 20, 2.75, 2)
+
+
 }
 class Customer (val id: Int, var name: String , val cashLeft: Double)
+
+
+
+fun buyItem(cost: Double, cashLeft: Double = 1.0): Double {
+    return cashLeft - cost
+}
 class VendingMachine (val id: Int, var name: String)
-class Snack (val id: Int, var name: String, private var quantity: Int, var cost: Int, var vendingMachineNum: Int){
+class Snack (val id: Int, var name: String, private var quantity: Int, var cost: Double, var vendingMachineNum: Int){
 }
