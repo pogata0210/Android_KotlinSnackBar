@@ -1,15 +1,24 @@
 fun main (args: Array<String>){
-    println("Jane's Cash On Hand is ${buyItem(7.50, 45.25)}")
 
-    /**
-     * Jane buys 3 of Soda. Print Jane Cash on hand. Print quantity of Soda.
-    Jane buys 1 of Pretzel. Print Jane Cash on hand. Print quantity of Pretzel.
-    Bob buys 2 of Soda. Print Bob Cash on Hand. Print quantity of Soda.
-    Jane finds $10. Print Jane Cash on Hand.
-    Jane buys 1 of Chocolate Bar. Print Jane Cash on Hand. Print quantity of Chocolate Bar.
-    Snack 3 gets 12 more. Print quantity of Pretzel.
-    Bob buys 3 of Pretzel. Print Bob Cash on hand. Print quantity of Pretzel.
-     */
+    println("Jane's Cash On Hand After Soda is ${buyItem(7.50, 45.25)}")
+    println("Quantity Of Soda is ${quantityInStock(24, 3)}")
+
+    println("Jane's Cash On Hand After Pretzel is ${buyItem(2.00, 37.75)}")
+    println("Quantity Of Pretzel is ${quantityInStock(30, 1)}")
+
+    println("Bob's Cash On Hand After Soda is ${buyItem(5.00, 33.14)}")
+    println("Quantity Of Soda is ${quantityInStock(21, 2)}")
+
+    println("Jane's Cash On Hand After Finding Money ${addMoney(37.50, 10.0)}")
+
+    println("Jane's Cash On Hand After Chocolate Bar is ${buyItem(1.00, 47.50)}")
+    println("Quantity Of Soda is ${quantityInStock(36, 1)}")
+
+    println("Quantity Of Soda is ${AddquantityInStock(30, 12)}")
+
+    println("BOb's Cash On Hand After Pretzel is ${buyItem(2.00, 28.14 )}")
+    println("Quantity Of Pretzel is ${quantityInStock(42, 3)}")
+    
 
     val jane = Customer(1,"Jane", 45.25 )
     val bob = Customer(2, "Bob", 33.14)
@@ -27,13 +36,29 @@ fun main (args: Array<String>){
 
 
 }
+
+fun AddquantityInStock(quantity: Int, num: Int = 1): Int {
+    return quantity + num
+
+}
+
+fun addMoney(cashLeft: Double, num: Double = 1.0): Double{
+    return cashLeft + num
+
+}
+
 class Customer (val id: Int, var name: String , val cashLeft: Double)
 
 
 
 fun buyItem(cost: Double, cashLeft: Double = 1.0): Double {
     return cashLeft - cost
+
+
 }
 class VendingMachine (val id: Int, var name: String)
-class Snack (val id: Int, var name: String, private var quantity: Int, var cost: Double, var vendingMachineNum: Int){
+class Snack (val id: Int, var name: String, private val quantity: Int, var cost: Double, var vendingMachineNum: Int)
+
+fun quantityInStock(quantity: Int, num: Int = 1): Int{
+    return quantity - num
 }
