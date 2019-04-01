@@ -1,5 +1,15 @@
 fun main (args: Array<String>){
 
+    /**
+     * Jane buys 3 of Soda. Print Jane Cash on hand. Print quantity of Soda.
+    Jane buys 1 of Pretzel. Print Jane Cash on hand. Print quantity of Pretzel.
+    Bob buys 2 of Soda. Print Bob Cash on Hand. Print quantity of Soda.
+    Jane finds $10. Print Jane Cash on Hand.
+    Jane buys 1 of Chocolate Bar. Print Jane Cash on Hand. Print quantity of Chocolate Bar.
+    Snack 3 gets 12 more. Print quantity of Pretzel.
+    Bob buys 3 of Pretzel. Print Bob Cash on hand. Print quantity of Pretzel.
+     */
+
     val jane = Customer(1,"Jane", 45.25 )
     val bob = Customer(2, "Bob", 33.14)
 
