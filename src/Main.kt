@@ -15,4 +15,9 @@ fun main (args: Array<String>){
     val water = Snack(2, "Water", 20, 2.75, 2)
 
 
+    class Customer (val id: Int, var name: String , val cashLeft: Double)
+    class VengingMachine (val id: Int, var name: String)
+    class Snack (val id: Int, var name: String, private var quantity: Int, var cost: Int, var vendingMachineNum: Int)
+
+
 }
